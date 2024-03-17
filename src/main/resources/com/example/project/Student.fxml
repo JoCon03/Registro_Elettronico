@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.StudentController">
+   <children>
+      <TableView fx:id="tableview" layoutX="-4.0" layoutY="109.0" onMouseClicked="#click" prefHeight="495.0" prefWidth="906.0">
+        <columns>
+          <TableColumn fx:id="profColumn" maxWidth="160.7999815940857" minWidth="-Infinity" prefWidth="160.7999815940857" text="PROFESSORE" />
+          <TableColumn fx:id="subjectColumn" editable="false" minWidth="-Infinity" prefWidth="128.00003051757812" text="MATERIA" />
+            <TableColumn fx:id="gradeColumn" editable="false" minWidth="-Infinity" prefWidth="96.0" text="VOTO" />
+            <TableColumn fx:id="dateColumn" editable="false" maxWidth="322.4000549316406" minWidth="-Infinity" prefWidth="104.0" text="DATA" />
+            <TableColumn fx:id="commentColumn" editable="false" maxWidth="862.8000106811523" minWidth="-Infinity" prefWidth="424.0000305175781" text="COMMENTO" />
+        </columns>
+      </TableView>
+      <Label fx:id="name_student" layoutX="7.0" layoutY="30.0" prefHeight="40.0" prefWidth="520.0" text="?" />
+      <Label fx:id="numberOfAbsences" layoutX="7.0" layoutY="73.0" prefHeight="40.0" prefWidth="520.0" styleClass="label-style" text="ASSENZE: " />
+      <Button fx:id="gradesButton" layoutX="660.0" layoutY="39.0" mnemonicParsing="false" onAction="#set_grades" prefHeight="54.0" prefWidth="110.0" text="VOTI" />
+      <Button fx:id="averageButton" layoutX="775.0" layoutY="39.0" mnemonicParsing="false" onAction="#set_averages" prefHeight="54.0" prefWidth="110.0" text="MEDIE VOTI" />
+      <TableView fx:id="average_Table" layoutY="107.0" prefHeight="495.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="second_subject" prefWidth="444.8000122308731" text="MATERIA" />
+          <TableColumn fx:id="second_average" prefWidth="454.3999938964844" text="MEDIA" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <MenuBar fx:id="menuBar" layoutX="-2.0" prefHeight="22.0" prefWidth="900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="TEMA">
+               <items>
+                <MenuItem mnemonicParsing="false" onAction="#set_student_LightTheme" text="CHIARO" />
+                  <MenuItem mnemonicParsing="false" onAction="#set_student_DarKTheme" text="SCURO" />
+                <MenuItem mnemonicParsing="false" onAction="#set_student_PurpleTheme" text="VIOLA" />
+                  <MenuItem mnemonicParsing="false" onAction="#set_student_BlueTheme" text="BLU" />
+                  <MenuItem mnemonicParsing="false" onAction="#set_student_GreenTheme" text="VERDE" />
+                  <MenuItem mnemonicParsing="false" onAction="#set_student_RedTheme" text="ROSSO" />
+                  <MenuItem mnemonicParsing="false" onAction="#set_student_YellowTheme" text="GIALLO" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="INFO">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Help_functionality" text="FUNZIONALITÀ" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="LOGOUT">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Student_logout" text="ESCI" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="absencesNumber" layoutX="88.0" layoutY="75.0" prefHeight="22.0" prefWidth="66.0" text="*" />
+      <Label fx:id="info" layoutX="115.0" layoutY="84.0" onMouseClicked="#info_Absences" onMouseEntered="#hover" onMouseExited="#backToNormal" prefHeight="18.0" prefWidth="66.0" text="info assenze" underline="true" />
+   </children>
+</AnchorPane>

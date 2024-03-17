@@ -1,0 +1,46 @@
+.root{
+   -fx-background-color : FireBrick;
+}
+.label{
+  -fx-font-family:"Times New Roman";
+}
+.label-style {
+    -fx-font-size: 20px;
+    -fx-text-fill: whiteSmoke;
+    -fx-font-family:"Impact";
+}
+#info{
+  -fx-text-fill: whiteSmoke;
+}
+#info:hover{
+  -fx-text-fill: bisque;
+}
+.button{
+   -fx-background-color:whiteSmoke;
+   -fx-text-fill:black;
+}
+
+.button_white{
+      -fx-background-color:white;
+      -fx-text-fill:black;
+}
+#tableview{
+  -fx-background-color: FireBrick;
+}
+#Tab_media{
+   -fx-background-color:FireBrick;
+}
+#tableview .table-row-cell:hover .table-cell {
+    -fx-background-color: darkCyan; /* Colore di sfondo quando trascini la cella */
+}
+#tableview .table-cell {
+    -fx-background-color: FireBrick;
+    -fx-text-fill :whiteSmoke;
+}
+#tableview .table-row-cell:selected .table-cell {
+    -fx-background-color: grey; /* Colore di sfondo quando la cella è selezionata */
+}
+
+#average_Table .table-cell:empty{
+    -fx-background-color: FireBrick;
+}

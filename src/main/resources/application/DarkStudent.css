@@ -1,0 +1,46 @@
+.root{
+   -fx-background-color : #1a1a1a;
+}
+.label{
+  -fx-font-family:"Times New Roman";
+}
+.label-style {
+    -fx-font-size: 20px;
+    -fx-text-fill: whiteSmoke;
+    -fx-font-family:"Impact";
+}
+#info{
+  -fx-text-fill: whiteSmoke;
+}
+#info:hover{
+  -fx-text-fill: blue;
+}
+.button{
+   -fx-background-color:royalBlue;
+   -fx-text-fill:white
+}
+
+.button_blue{
+     -fx-background-color:royalBlue;
+     -fx-text-fill:white}
+#tableview{
+  -fx-background-color: #1a1a1a;
+}
+#Tab_media{
+   -fx-background-color:#1a1a1a;
+}
+#tableview .table-row-cell:hover .table-cell {
+    -fx-background-color: dimGray; /* Colore di sfondo quando trascini la cella */
+}
+#tableview .table-cell {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill :whiteSmoke;
+}
+#tableview .table-row-cell:selected .table-cell {
+    -fx-background-color: grey; /* Colore di sfondo quando la cella è selezionata */
+}
+
+#average_Table .table-cell:empty{
+    -fx-background-color: #1a1a1a;
+}
+
