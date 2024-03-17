@@ -1,4 +1,4 @@
-###Credits: 
+### Credits: 
 - JoCon03 --> AdminController/fxml, RequestPasswordController/fxml, RequestsScreenController/fxml, ProfController, AbsencesController, AbsencesScreen.fxml
 - Lorybilo02 --> ProfController, Professor.fxml, StudentController/fxml, LoginController/fxml, View, all CSS files 
 - Sim23F --> Model, ShettyModel, all TableRows Classes, all Databases, README 
