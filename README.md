@@ -1,4 +1,9 @@
-# Registro Elettronico  
+###Credits: 
+- JoCon03 --> AdminController/fxml, RequestPasswordController/fxml, RequestsScreenController/fxml, ProfController, AbsencesController, AbsencesScreen.fxml
+- Lorybilo02 --> ProfController, Professor.fxml, StudentController/fxml, LoginController/fxml, View, all CSS files 
+- Sim23F --> Model, ShettyModel, all TableRows Classes, all Databases, README 
+
+# Registro Elettronico (ITA)
 Il **Registro Elettronico** é una piattoforma digitale che gestisce e immagazina in maniera sicura ed efficiente i dati di un istituto scolastico, rendendo facile consultarli e modificarli tramite un interfaccia grafica minimale ed intuitiva.
 
 Gli utenti della piattaforma sono divisi in tre categorie: Amministratore, Professori e Studenti. 
@@ -39,5 +44,7 @@ create table Grade(id integer primary key autoincrement, student text, teaching 
 create table Absence(id integer primary key autoincrement, student text, date text, foreign key(student) references Student(id));
 
 ### Admin Profile Configuration Example
+- username: Admin
+- password: 1234
 insert into admin(id, password, school, theme, login_theme, password_requests) 
   values("Admin", "$2a$12$5JvPIwVk2fDdTeRtH3l4XOy2TlTvDVigZMqK58Eao/fEtbRF8w2dW", "School Name", "Light", "Light", "");  
