@@ -1,0 +1,31 @@
+.root{
+    -fx-background-color :#000099;
+ }
+ #label_login{
+      -fx-font-size: 47px;
+ }
+ .label{
+  -fx-font-family:"Times New Roman";
+  -fx-text-fill:whiteSmoke;}
+ .button{
+    -fx-background-color:whiteSmoke;
+    -fx-text-fill:black;
+ }
+ .button:hover{
+   -fx-background-color:darkGray;
+   transition :0.7s;
+ }
+ .button_style_white{
+       -fx-background-color:whiteSmoke;
+       -fx-text-fill:black;
+ }
+ #passwordForgotten:hover{
+   -fx-text-fill: bisque;
+ }
+ #myTemeButton {
+     -fx-text-fill: black;
+ }
+
+ #myTemeButton .label {
+     -fx-text-fill: black;
+ }

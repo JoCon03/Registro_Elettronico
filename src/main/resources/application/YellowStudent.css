@@ -1,0 +1,43 @@
+.root{
+   -fx-background-color : Goldenrod;
+}
+.label{
+  -fx-font-family:"Times New Roman";
+}
+.label-style {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-family:"Impact";
+}
+#info:hover{
+  -fx-text-fill: blue;
+}
+.button{
+   -fx-background-color:green;
+   -fx-text-fill:white;
+}
+
+.button_green{
+      -fx-background-color:green;
+      -fx-text-fill:white;
+}
+#tableview{
+  -fx-background-color: Goldenrod;
+}
+#Tab_media{
+   -fx-background-color:Goldenrod;
+}
+#tableview .table-row-cell:hover .table-cell {
+    -fx-background-color: yellowGreen; /* Colore di sfondo quando trascini la cella */
+}
+#tableview .table-cell {
+    -fx-background-color: Goldenrod;
+    -fx-text-fill :black;
+}
+#tableview .table-row-cell:selected .table-cell {
+    -fx-background-color: green; /* Colore di sfondo quando la cella è selezionata */
+}
+
+#average_Table .table-cell:empty{
+    -fx-background-color: Goldenrod;
+}

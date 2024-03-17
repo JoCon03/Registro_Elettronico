@@ -1,0 +1,26 @@
+.root{
+   -fx-background-color :whiteSmoke;
+}
+#label_login{
+     -fx-font-size: 47px;
+}
+.label{
+ -fx-font-family:"Times New Roman";
+ -fx-text-fill:black;
+ }
+.button_style_blue{
+        -fx-background-color:royalBlue;
+        -fx-text-fill:whiteSmoke;
+ }
+.button{
+   -fx-background-color:royalBlue;
+   -fx-text-fill:white
+}
+.button:hover{
+  -fx-background-color:blue;
+  transition :0.7s;
+}
+#passwordForgotten:hover{
+  -fx-text-fill: blue;
+}
+

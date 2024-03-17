@@ -1,0 +1,41 @@
+.root{
+   -fx-background-color :#690099;
+}
+.label{
+  -fx-font-family:"Times New Roman";
+}
+#studentLabel{-fx-text-fill: whiteSmoke;-fx-font-size: 15px}
+#gradeLabel{-fx-text-fill: whiteSmoke;-fx-font-size: 15px}
+#dateLabel{-fx-text-fill: whiteSmoke;-fx-font-size: 15px}
+#commentLabel{-fx-text-fill: whiteSmoke;-fx-font-size: 15px}
+.button{
+   -fx-background-color: khaki;
+   -fx-text-fill:black;
+}
+.button:hover{
+  -fx-background-color:gold;
+  transition :0.7s;
+}
+#removeButton:hover{
+  -fx-background-color:red;
+  -fx-text-fill :white;
+  transition :0.7s;
+}
+.label-style {
+    -fx-font-size: 25px;
+    -fx-text-fill: whiteSmoke;
+    -fx-font-family:"Impact";
+}
+#profTable{
+   -fx-background-color: #690099;
+}
+#profTable .table-row-cell:hover .table-cell {
+    -fx-background-color: #230033; /* Colore di sfondo quando trascini la cella */
+}
+#profTable .table-cell {
+    -fx-background-color: #690099;
+    -fx-text-fill :whiteSmoke;
+}
+#profTable .table-row-cell:selected .table-cell {
+    -fx-background-color: gold; /* Colore di sfondo quando la cella è selezionata */
+}
