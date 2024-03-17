@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.AbsenceController">
+   <children>
+      <TabPane fx:id="absencesPane" layoutY="93.0" prefHeight="310.0" prefWidth="450.0" tabClosingPolicy="UNAVAILABLE" />
+      <TableView fx:id="attendanceTable" layoutY="121.0" onMouseClicked="#click" prefHeight="279.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="studentColumn" prefWidth="143.20001828670502" text="Alunno" />
+          <TableColumn fx:id="absencesColumn" prefWidth="306.39996337890625" text="Assenze" />
+        </columns>
+      </TableView>
+      <Label fx:id="profName" layoutX="2.0" layoutY="63.0" prefHeight="32.0" prefWidth="227.0" text="Nome">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="professorLabel" layoutX="2.0" layoutY="36.0" prefHeight="32.0" prefWidth="124.0" text="Professore:">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="640.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="INFO">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#instruction" text="FUNZIONALITA'" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="studentNameTextField" layoutX="473.0" layoutY="135.0" onKeyPressed="#changeToPicker" />
+      <Label fx:id="studentNameLabel" layoutX="473.0" layoutY="116.0" text="Nome Alunno:">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="attendancePicker" layoutX="473.0" layoutY="207.0" onKeyPressed="#submitFromPicker" prefHeight="42.0" prefWidth="150.0" />
+      <Label fx:id="dateLabel" layoutX="473.0" layoutY="190.0" prefHeight="18.0" prefWidth="90.0" text="Data Assenza:">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addAbsenceButton" layoutX="473.0" layoutY="280.0" mnemonicParsing="false" onAction="#addAbsences" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: Blue; -fx-border-radius: 1; -fx-border-color: black; -fx-border-width: 2;" text="Aggiungi Assenza" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeAbsenceButton" layoutX="473.0" layoutY="341.0" mnemonicParsing="false" onAction="#removeAbsences" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: Blue; -fx-border-color: Black; -fx-border-radius: 1; -fx-border-width: 2;" text="Rimuovi Assenza" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
